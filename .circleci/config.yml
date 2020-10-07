@@ -11,6 +11,7 @@ jobs:
       - image: "circleci/python:3.6.4"
     steps:
       - checkout
+      - run: pip install --user -r requirements.txt
       - run: python3 test.py
 
 workflows:
