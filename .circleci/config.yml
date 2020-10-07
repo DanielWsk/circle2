@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: danielweiskopf/circle2-project
+      - image: danielweiskopf/circle2:latest
     steps:
       - checkout
   test:
