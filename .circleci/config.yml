@@ -44,7 +44,7 @@ orbs:
 workflows:
   build_and_test:
     jobs:
-      - build
+      - build-and-push
       - test:
           requires:
             - build
